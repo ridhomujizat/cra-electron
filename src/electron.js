@@ -17,9 +17,10 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      // add
-      nodeIntegration: true, // these
-    }, // lines
+      nodeIntegration: true,
+      enableRemoteModule: true,
+      contextIsolation: false,
+    }
   });
 
   // and load the index.html of the app.
